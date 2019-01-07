@@ -18,10 +18,13 @@ console.log("c = a/b = " + c);
 //dealing with constants
 const d = a/b;
 console.log("const d = a/2 = " + d);
+
+console.log("Now trying to modify the const d")
+console.log("d = a*b");
 try{
     d = a*b;
 }
 catch(err){
     console.log(err);
-    console.log("The value of d cannot be modified as it has been declared as a constant opposed to a,b and c which are variables")
+    console.log("The value of d cannot be modified as it has been declared as a constant unlike a,b and c as they are variables")
 }
